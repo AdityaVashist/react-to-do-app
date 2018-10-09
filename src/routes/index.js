@@ -1,13 +1,14 @@
 import React from 'react';
 import {Route} from 'react-router';
+import Home from '../pages/home';
 import Loadable from 'react-loadable';
 
 const Loading = () => <div>Loading...</div>;
 
-const Home = Loadable({
-  loader: () => import('../pages/home'),
-  loading: Loading,
-});
+// const Home = Loadable({
+//   loader: () => import('../pages/home'),
+//   loading: Loading,
+// });
 
 const PendingTask = Loadable({
   loader: () => import('../pages/pendingTask'),
